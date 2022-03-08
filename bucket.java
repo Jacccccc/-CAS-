@@ -15,7 +15,7 @@ public class bucket {
     volatile long nextTime; //下一次添加令牌的时间
     static final int internal=3; //添加令牌的间隔时间
     static final long maxCount=100;   //桶最大容量
-    static final int per=1;
+    static final int per=1;//一次添加的令牌数量
     private static final long COUNT_OFFSET;
     private static final long TIME_OFFSET;
     private static final Unsafe U;
